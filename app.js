@@ -6,10 +6,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.post('/12', (req, res) => {
- 
-  console.log(req);
-})
+app.post('/webhook', (req, res) => {
+  console.log(req.body);
+  res.sendStatus(200);
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
