@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.post('/webhook', (req, res) => {
+app.get('/webhook', (req, res) => {
   console.log(req.body);
   res.sendStatus(200);
 });
