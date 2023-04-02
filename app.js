@@ -17,6 +17,11 @@ app.post('/webhook', (req, res) => {
 });
 app.get('/', (req, res) => {
   res.send('Hello World!')
+})
+
+app.post('/webhook', (req, res) => {
+  console.log(req.body);
+  res.sendStatus(200);
 });
 
 // Start the server
