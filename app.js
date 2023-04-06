@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 // Define the endpoint for receiving webhook notifications
 app.post('/webhook', (req, res) => {
   // Log the incoming data to the console
-  console.log(req.body);
+  console.log("1");
 
   // Send a response back to Kibana
   res.send('OK');
