@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
+var a=0;
 const app = express();
 const port = 3000;
 
@@ -11,7 +11,8 @@ app.use(bodyParser.json());
 app.post('/webhook', (req, res) => {
   // Log the incoming data to the console
   console.log(req.body);
-
+a++;
+  console.log(a);
   // Send a response back to Kibana
   res.send('OK');
 });
